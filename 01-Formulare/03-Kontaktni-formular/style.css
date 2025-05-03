@@ -40,11 +40,11 @@ form {
 .form-field input[type=text]:focus,
 .form-field input[type=number]:focus,
 .form-field input[type=email]:focus,
+.form-field input[type=tel]:focus,
 .form-field select:focus,
 .form-field textarea:focus {
 	outline: 0.5px solid gray;
-
-
+	background-color: azure;
 }
 
 
