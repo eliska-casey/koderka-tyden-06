@@ -12,12 +12,35 @@
 
 
   <!-- Label a pole pod sebou -->
+<form>   
+<div class="form-field">
+   <label for="jmeno">Jméno</label>
+   <input type="text" name="jmeno" id="jmeno" placeholder="  ">
+      
+</div>
 
+<div class="form-field">
+   <label for="jmeno">Příjmení<span class="required">*</span></label>
+   <input type="text" name="prijmeni" id="prijmeni" required>
+</div>
 
+<div class="form-field">
+  <label for="adresa">Adresa</label>
+  <textarea name="adresa" id="adresa" rows="5">
+
+  </textarea>
+</div>
 
   <!-- Label a pole vedle sebe -->
+<div class="form-horizontal">
+  <label for="prezdivka">Přezdívka</label>
+  <input type="text" name="prezdivka" id="prezdivka">
+</div>
 
-
+<div class="form-horizontal">
+  <label for="vek">Věk</label>
+  <input type="number" name="vek" id="vek">
+</div>
 
 
   <!--
@@ -35,6 +58,41 @@
     - jinak v podstatě nemožné stylovat
     - lze vyrobit "falešný" checkbox/radio pomocí speciálních CSS triků - ukážeme si později v kurzu
   -->
+<div class="form-checkbox">
+  <input type="checkbox" name="souhlas" id="souhlas" value="ano">
+  <label for="souhlas">Souhlasím s podmínkami</label>
+</div>
+
+
+<div class="form-field">
+  <label>Oblíbené ovoce</label>
+
+  <div class="form-radio">
+    <input type="radio" name="ovoce" id="ovoce1" value="jablko">
+    <label for="ovoce1">Jablko</label>
+  </div>
+
+  <div class="form-radio">
+    <input type="radio" name="ovoce" id="ovoce2" value="hruska">
+    <label for="ovoce2">Hruška</label>
+  </div>
+
+  <div class="form-radio">
+    <input type="radio" name="ovoce" id="ovoce3" value="meloun">
+    <label for="ovoce3">Meloun</label>
+  </div>
+
+</div>
+
+<div class="form-field">
+  <label for="mesto">Město</label>
+  <select name="mesto" id="mesto">
+    <option value="praha">Praha</option>
+    <option value="brno">Brno</option>
+    <option value="ostrava">Ostrava</option>
+  </select>
+</div>
+
 
 
   <!--
@@ -44,7 +102,8 @@
   -->
 
 
-
+<button type="submit" class="button">OK</button>
+</form>
 
 </body>
 </html>

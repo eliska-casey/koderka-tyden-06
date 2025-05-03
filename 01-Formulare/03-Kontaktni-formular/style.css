@@ -9,3 +9,51 @@ body {
 
 /* ------------------------- */
 
+form {
+	width: 100%;
+  	max-width: 400px;
+}
+
+.form-field, 
+.form-checkbox {
+	margin-bottom: 20px;
+}
+
+.form-field > label{
+	display: block;
+	font-size: 16px;
+  }
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	width: 100%;
+	max-width: 400px;
+	border-radius: 5px;
+	border: 0.25px solid lightgray;
+	
+}
+
+.form-field input[type=text]:focus,
+.form-field input[type=number]:focus,
+.form-field input[type=email]:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+	outline: 0.5px solid gray;
+
+
+}
+
+
+
+.button {
+	border-radius: 6px;
+	border: 0.5px solid dodgerblue;
+	background-color: dodgerblue;
+	padding: 5px 15px;
+	color: white;
+	font-size: 16px;
+}

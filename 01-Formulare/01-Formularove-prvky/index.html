@@ -177,7 +177,78 @@
         <legend>...</legend>
       </fieldset>
     -->
+<form action="http://formular.itgirls.cz">
 
+<fieldset>
+
+<legend>Osobní údaje</legend>
+
+<div>
+  <label for="jmeno">Jméno</label>
+  <input 
+    type="text"
+    name="jmeno"
+    id="jmeno"
+    size="10"
+    placeholder="křestní jméno"
+  >
+</div>
+
+<div>
+  <label for="vek">Věk</label>
+  <input type="number" name="vek" id="vek" min="3" max="50">
+</div>
+
+<div>
+  <label for="email">E-mail</label>
+  <input type="email" name="email" id="email">
+</div>
+
+</fieldset>
+
+<div>
+  <label for="telefon">Telefon</label>
+  <input type="tel" name="telefon" id="telefon">
+</div>
+
+<div>
+  <label for="datum">Datum</label>
+  <input type="date" name="datum" id="datum">
+</div>
+
+<div>
+  <label for="adresa">Adresa</label>
+  <textarea name="adresa" id="adresa" rows="5" cols="15">Ulice 123</textarea>
+</div>
+
+<div>
+  <label for="souhlas">Souhlasím se vším</label>
+  <input type="checkbox" name="souhlas" id="souhlas">
+</div>
+
+<div>
+  <label for="ovoce">Jablko</label>
+  <input type="radio" name="ovoce" value="jablko" id="ovoce1" checked>
+  <label for="ovoce">Hruška</label>
+  <input type="radio" name="ovoce" value="hruška" id="ovoce2">
+  <label for="ovoce">Meloun</label>
+  <input type="radio" name="ovoce" value="meloun" id="ovoce3">
+</div>
+
+<div>
+  <label for="mesto">Město</label>
+  <select name="mesto" id="mesto"> 
+    <option></option>
+    <option>Praha</option>
+    <option>Ostrava</option>
+  </select>
+</div>
+
+
+
+<button type="submit">odeslat</button>
+
+</form>
 
 </body>
 </html>

@@ -22,5 +22,52 @@
 		... nebo ho napoj na některou z formulářových služeb na internetu.
 	-->
 
+<form>
+
+
+<div class="form-field">
+	<label for="jmeno">Jméno a příjmení<span class="required">*</span></label>
+	<input type="text" name="jmeno" id="jmeno" required>
+</div>
+
+<div class="form-field">
+	<label for="email">E-mail<span class="required">*</span></label>
+	<input type="email" name="email" id="email" required>
+</div>
+
+<div class="form-field">
+	<label for="tel">Telefon</label>
+	<input type="tel" name="tel" id="tel">
+</div>
+
+<div class="form-field">
+	<label for="dotaz">Čeho se týká Váš dotaz?</label>
+	<select name="dotaz" id="dotaz">
+		<option></option>
+		<option>Dotaz na produkt</option>
+		<option>Dotaz na objednávku</option>
+		<option>Reklamace</option>
+		<option>Jiné</option>
+	</select>
+</div>
+
+<div class="form-field">
+	<label for="zprava">Zpráva</label>
+	<textarea id="zprava" rows="6">
+
+	</textarea>
+</div>
+
+<div class="form-checkbox">
+	<input type="checkbox" name="souhlas" id="souhlas" value="ano">
+	<label for="souhlas">zavolejte mi zpět</label>
+</div>
+
+
+<button type="submit" class="button">Odeslat</button>
+
+
+</form>
+
 </body>
 </html>

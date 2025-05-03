@@ -5,6 +5,112 @@ html { box-sizing: border-box; }
 body {
   margin: 20px;
   font: 16px/1.5 sans-serif ;
+  background-color: #f9d030;
 }
 
 /* ------------------------- */
+form {
+  width: 100%;
+  max-width: 400px;
+}
+.form-field {
+ margin-bottom: 10px;
+}
+
+.form-field > label{
+  display: block;
+  font-size: 14px;
+}
+
+.form-field input[type=text],
+.form-field input[type=number],
+.form-field input[type=email],
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid fuchsia;
+  border-radius: 6px;
+  background-color: fuchsia;
+  font-size: 16px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.form-field input[type=text]:focus,
+.form-field input[type=number]:focus,
+.form-field input[type=email]:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 0;
+  border: 2px solid white;
+  background-color: rgb(204, 94, 204);
+}
+
+
+.form-field input:invalid {
+  background-color: hotpink;
+  border-color: green;
+}
+
+.form-field input[type=text]:not(:placeholder-shown):valid {
+  outline: purple 1;
+}
+
+.required {
+  color: turquoise;
+}
+
+.form-horizontal {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-horizontal label {
+  flex: 0 0 100px;
+  
+}
+
+.form-horizontal input {
+  flex: 1 1 100%;
+  border: 1px solid fuchsia;
+  border-radius: 6px;
+  background-color: fuchsia;
+  font-size: 16px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.form-horizontal input:focus {
+  outline: 0;
+  border: 2px solid white;
+  background-color: rgb(204, 94, 204);
+}
+
+/*.form-horizontal label {
+  display: inline-block;
+  width: 100px;
+}
+
+.form-horizontal input {
+  width: ;
+}*/
+
+.form-checkbox {
+  margin-bottom: 10px;
+}
+
+
+.button {
+  background-color: fuchsia;
+  font-size: 16px;
+  border: 1px solid fuchsia;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.button:hover {
+  background-color: turquoise;
+  border: 1px solid turquoise;
+  border-radius: 6px;
+}
